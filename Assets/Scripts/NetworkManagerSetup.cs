@@ -43,6 +43,7 @@ public class NetworkManagerSetup : MonoBehaviour
 				Debug.Log("Attempting to connect to " + hosts[i].gameName);
 				Network.Connect(hosts[i]);
 			}
+                           MasterServer.ClearHostList()
 		}
 	}
 	
